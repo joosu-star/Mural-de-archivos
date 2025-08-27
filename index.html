@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Informes</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- jsPDF para exportar PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- Firebase -->
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Panel de Informes</h1>
+    <button id="newReportBtn" title="Nuevo informe">+</button>
+  </header>
+
+  <div id="reportFormContainer" class="hidden">
+    <textarea id="reportInput" placeholder="Escribe tu informe aquí..."></textarea>
+    <input type="file" id="reportFile">
+    <button id="saveReportBtn">Guardar Informe</button>
+  </div>
+
+  <div id="reports"></div>
+</body>
+	</html>
